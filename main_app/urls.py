@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from .views import EventApiView
 
 urlpatterns = [
-    path('', views.criar_evento, name='home'),
+    path('', EventApiView.as_view(), name='event'),
 ]
